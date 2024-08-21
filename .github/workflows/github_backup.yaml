@@ -22,7 +22,7 @@ jobs:
           role-session-name: GithubActions
 
       - name: Backing up this repo to AWS S3
-        uses: peter-evans/s3-backup@4f39c7dab63c7666d6ba6722d7966e7d0655583c # pin @v1.1.0
+        uses: peter-evans/s3-backup@59efd330705d92805a44894668b6cf5c10dc740e # pin @v1.1.1
         env:
           AWS_REGION: ${{ env.AWS_REGION }}
           ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}

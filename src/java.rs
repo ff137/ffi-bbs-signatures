@@ -50,7 +50,7 @@ use bbs::{ToVariableLengthBytes, FR_COMPRESSED_SIZE, G1_COMPRESSED_SIZE};
 use std::cell::RefCell;
 
 thread_local! {
-    static LAST_ERROR: RefCell<Option<String>> = RefCell::new(None);
+    static LAST_ERROR: RefCell<Option<String>> = const { RefCell::new(None) };
 }
 
 fn update_last_error(m: &str) {

@@ -8,15 +8,23 @@ updates:
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: github-actions
     directory: /
+    schedule:
+      interval: "weekly"
 
   # Maintain dependencies for Yarn
   - package-ecosystem: npm
     directory: /
+    schedule:
+      interval: "weekly"
 
   # Maintain dependencies for Cargo
   - package-ecosystem: cargo
     directory: /
+    schedule:
+      interval: "weekly"
 
   # Maintain dependencies for Python
   - package-ecosystem: pip
     directory: /wrappers/python
+    schedule:
+      interval: "weekly"

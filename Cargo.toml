@@ -26,7 +26,7 @@ java = ["jni"]
 arrayref = "0.3"
 bbs = "0.4"
 ffi-support = "0.4"
-hkdf = "0.8"
+hkdf = "0.12"
 jni = { version = "0.10", optional = true }
 lazy_static = "1.4"
 pairing-plus = "0.19"
